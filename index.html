@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema Educativo Interactivo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Sistema Educativo Interactivo</h1>
+  <p>Evalúa tus conocimientos de forma profesional y divertida</p>
+  
+</header>
+
+<main class="main-container">
+
+  <!-- Registro -->
+  <section id="login-container" class="card">
+    <h2>🎓 Registro del Estudiante</h2>
+    <input type="text" id="nombre" placeholder="Nombre del estudiante" />
+    <input type="text" id="curso" placeholder="Curso o grado" />
+    <button id="entrar-btn">Entrar</button>
+  </section>
+
+  <!-- Selección de Materia -->
+  <section id="materia-container" class="card hidden">
+    <h2>📚 Selección de Materia</h2>
+    <div class="materias-grid" id="materias-grid"></div>
+    <div class="botones-menu">
+      <button id="ver-puntuaciones">Ver mis puntuaciones</button>
+      <button id="cerrar-sesion">Cerrar sesión</button>
+    </div>
+  </section>
+
+  <!-- Quiz -->
+  <section id="quiz-container" class="card hidden">
+    <div class="question" id="pregunta-texto"></div>
+    <div class="options" id="opciones"></div>
+    <button id="siguiente-btn" class="hidden">Siguiente</button>
+  </section>
+
+  <!-- Resultados -->
+  <section id="result" class="card hidden"></section>
+
+  <!-- Información del sistema -->
+  <section id="info-sistema" class="card">
+    <h2>ℹ️ Información del Sistema</h2>
+    <h3>🧩 Materiales Utilizados</h3>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+    </ul>
+    <h3>⚙️ Requisitos Funcionales</h3>
+    <ul>
+      <li>Registro del usuario</li>
+      <li>Selección de materia</li>
+      <li>10 preguntas aleatorias por materia</li>
+      <li>Visualización de resultados</li>
+      <li>Puntuaciones acumuladas</li>
+    </ul>
+    <h3>🚫 Requisitos No Funcionales</h3>
+    <ul>
+      <li>Interfaz clara y atractiva</li>
+      <li>Compatibilidad con navegadores modernos</li>
+      <li>Rendimiento rápido</li>
+    </ul>
+    <h3>📁 Estructura de Carpetas</h3>
+    <pre>
+/quiz-educativo/
+├── index.html
+├── style.css
+├── preguntas.js
+└── script.js
+    </pre>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Sistema Educativo Interactivo</p>
+  <div class="enlaces">
+    <a href="#login-container">Inicio</a>
+    <a href="#materia-container">Materias</a>
+    <a href="#info-sistema">Información</a>
+  </div>
+  <small>Todos los derechos reservados a:Desarrolladores:Vaneza Rodriguez y Jheyson Ponce. Product Owner:Sharick Melgar. Scrum Master:Cristian Laime</small>
+</footer>
+
+<script src="preguntas.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

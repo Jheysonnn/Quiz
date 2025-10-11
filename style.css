@@ -1,0 +1,53 @@
+/* Reset básico y tipografía */
+* { margin:0; padding:0; box-sizing:border-box; font-family:"Poppins", sans-serif; }
+body { display:flex; flex-direction:column; min-height:100vh; background: linear-gradient(135deg, #c3ecf7, #c3f7d0); }
+
+/* Header */
+.header { background-color:#004aad; color:white; text-align:center; padding:20px 10px; }
+.header h1 { margin:0; font-size:2em; }
+.header p { margin-top:5px; font-size:1em; }
+
+/* Main container */
+.main-container { flex:1; display:flex; flex-direction:column; align-items:center; padding:20px; }
+
+/* Tarjetas (cards) */
+.card { background:#fff; padding:25px; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.15); width:90%; max-width:700px; margin-bottom:20px; transition: all 0.3s; }
+.card:hover { transform: translateY(-2px); }
+.hidden { display:none; }
+
+/* Inputs */
+input { width:100%; padding:12px; margin:10px 0; border-radius:8px; border:2px solid #ddd; font-size:1em; transition: all 0.3s; }
+input:focus { border-color:#004aad; outline:none; box-shadow:0 0 5px rgba(0,74,173,0.3); }
+
+/* Botones */
+button { padding:12px 25px; background:linear-gradient(90deg, #4a00e0, #8e2de2); border:none; border-radius:10px; color:white; font-weight:600; cursor:pointer; margin:5px; transition: all 0.3s; }
+button:hover { transform: scale(1.05); }
+
+/* Grid de materias */
+.materias-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin:10px 0; }
+.materia-btn { padding:12px; background:linear-gradient(90deg,#0072ff,#00c6ff); color:white; border-radius:10px; cursor:pointer; text-align:center; font-weight:600; transition: all 0.3s; }
+.materia-btn:hover { transform: scale(1.05); }
+
+/* Preguntas y opciones */
+.question { font-size:1.2em; margin-bottom:15px; }
+.options { display:flex; flex-direction:column; gap:10px; }
+.option { background:#f5f5f5; padding:12px; border-radius:10px; cursor:pointer; transition: all 0.3s; }
+.option:hover { background-color:#e0e7ff; }
+.option.correct { background-color:#a4f9a4; border:2px solid #28a745; }
+.option.incorrect { background-color:#ffb6b6; border:2px solid #dc3545; }
+
+/* Footer */
+.footer { background-color:#004aad; color:white; text-align:center; padding:20px 10px; font-size:0.9em; display:flex; flex-direction:column; gap:10px; }
+.footer p { margin:0; }
+.footer .enlaces { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
+.footer .enlaces a { color:#ffd700; text-decoration:none; transition:all 0.3s; }
+.footer .enlaces a:hover { text-decoration:underline; }
+.footer small { margin-top:5px; color:#ccc; }
+
+/* Botones de menú */
+.botones-menu { display:flex; justify-content:space-between; flex-wrap:wrap; margin-top:10px; }
+
+/* Información sistema */
+#info-sistema ul { margin-left:20px; margin-bottom:10px; }
+#info-sistema pre { background:#f0f0f0; padding:10px; border-radius:10px; overflow-x:auto; }
+

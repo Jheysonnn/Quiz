@@ -23,7 +23,16 @@ const cerrarSesionBtn = document.getElementById("cerrar-sesion");
 entrarBtn.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim();
   const curso = document.getElementById("curso").value.trim();
-  if (!nombre || !curso) return alert("Completa todos los campos.");
+  if (!nombre || !curso){
+  Swal.fire({
+    icon: 'warning',
+    title: '¡Ups!',
+    text: 'Completa todos los campos',
+    confirmButtonText: 'OK'
+  });
+  return;
+}
+
   
   usuario = { nombre, curso };
   loginContainer.classList.add("hidden");
